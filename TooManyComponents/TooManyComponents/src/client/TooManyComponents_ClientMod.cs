@@ -1,8 +1,8 @@
 ﻿using LogicAPI.Client;
 
-namespace TMC.Client
+namespace TooManyComponents.Client
 {
-    public class TMC_ClientMod : ClientMod
+    public class TooManyComponents_ClientMod : ClientMod
     {
         protected override void Initialize()
         {

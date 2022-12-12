@@ -4,7 +4,7 @@ using LogicWorld.ClientCode;
 using LogicWorld.Interfaces;
 using LogicWorld.Rendering.Components;
 
-namespace TMC.Client.ClientCode
+namespace TooManyComponents.Client.ClientCode
 {
     public class WordDLatch : ComponentClientCode<WordDLatch.IData>, IColorableClientCode, IComponentClientCode
     {

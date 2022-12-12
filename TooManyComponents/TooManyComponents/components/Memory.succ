@@ -5,8 +5,8 @@ WordDLatch1Byte:
     column: "Memory"
     category: "Basic"
     prefab: dynamic
-    clientCode: TMC.Client.ClientCode.WordDLatch
-    logicCode: TMC.Server.LogicCode.WordDLatch
+    clientCode: TooManyComponents.Client.ClientCode.WordDLatch
+    logicCode: TooManyComponents.Server.LogicCode.WordDLatch
     placingRules:
         offsetDimensions: (2, 8)
         defaultOffset: (0, 0)
@@ -19,8 +19,8 @@ WordDLatch2Byte:
     column: "Memory"
     category: "Basic"
     prefab: dynamic
-    clientCode: TMC.Client.ClientCode.WordDLatch
-    logicCode: TMC.Server.LogicCode.WordDLatch
+    clientCode: TooManyComponents.Client.ClientCode.WordDLatch
+    logicCode: TooManyComponents.Server.LogicCode.WordDLatch
     placingRules:
         offsetDimensions: (2, 16)
         defaultOffset: (0, 0)
@@ -33,8 +33,8 @@ WordDLatch4Byte:
     column: "Memory"
     category: "Basic"
     prefab: dynamic
-    clientCode: TMC.Client.ClientCode.WordDLatch
-    logicCode: TMC.Server.LogicCode.WordDLatch
+    clientCode: TooManyComponents.Client.ClientCode.WordDLatch
+    logicCode: TooManyComponents.Server.LogicCode.WordDLatch
     placingRules:
         offsetDimensions: (2, 32)
         defaultOffset: (0, 0)
@@ -47,8 +47,8 @@ WordDLatch8Byte:
     column: "Memory"
     category: "Basic"
     prefab: dynamic
-    clientCode: TMC.Client.ClientCode.WordDLatch
-    logicCode: TMC.Server.LogicCode.WordDLatch
+    clientCode: TooManyComponents.Client.ClientCode.WordDLatch
+    logicCode: TooManyComponents.Server.LogicCode.WordDLatch
     placingRules:
         offsetDimensions: (2, 64)
         defaultOffset: (0, 0)
@@ -62,8 +62,8 @@ WordRelay1Byte:
     column: "Memory"
     category: "Basic"
     prefab: dynamic
-    clientCode: TMC.Client.ClientCode.WordRelay
-    logicCode: TMC.Server.LogicCode.WordRelay
+    clientCode: TooManyComponents.Client.ClientCode.WordRelay
+    logicCode: TooManyComponents.Server.LogicCode.WordRelay
     placingRules:
         offsetDimensions: (2, 8)
         defaultOffset: (0, 0)
@@ -76,8 +76,8 @@ WordRelay2Byte:
     column: "Memory"
     category: "Basic"
     prefab: dynamic
-    clientCode: TMC.Client.ClientCode.WordRelay
-    logicCode: TMC.Server.LogicCode.WordRelay
+    clientCode: TooManyComponents.Client.ClientCode.WordRelay
+    logicCode: TooManyComponents.Server.LogicCode.WordRelay
     placingRules:
         offsetDimensions: (2, 16)
         defaultOffset: (0, 0)
@@ -90,8 +90,8 @@ WordRelay4Byte:
     column: "Memory"
     category: "Basic"
     prefab: dynamic
-    clientCode: TMC.Client.ClientCode.WordRelay
-    logicCode: TMC.Server.LogicCode.WordRelay
+    clientCode: TooManyComponents.Client.ClientCode.WordRelay
+    logicCode: TooManyComponents.Server.LogicCode.WordRelay
     placingRules:
         offsetDimensions: (2, 32)
         defaultOffset: (0, 0)
@@ -104,8 +104,8 @@ WordRelay8Byte:
     column: "Memory"
     category: "Basic"
     prefab: dynamic
-    clientCode: TMC.Client.ClientCode.WordRelay
-    logicCode: TMC.Server.LogicCode.WordRelay
+    clientCode: TooManyComponents.Client.ClientCode.WordRelay
+    logicCode: TooManyComponents.Server.LogicCode.WordRelay
     placingRules:
         offsetDimensions: (2, 64)
         defaultOffset: (0, 0)

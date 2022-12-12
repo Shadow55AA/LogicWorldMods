@@ -1,6 +1,6 @@
 ﻿using LogicAPI.Server.Components;
 
-namespace TMC.Server.LogicCode
+namespace TooManyComponents.Server.LogicCode
 {
     public class WordDLatch : LogicComponent
     {
