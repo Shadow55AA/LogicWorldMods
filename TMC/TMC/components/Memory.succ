@@ -1,0 +1,112 @@
+#######################
+# Word D Latch 1 Byte #
+#######################
+WordDLatch1Byte:
+    column: "Memory"
+    category: "Basic"
+    prefab: dynamic
+    clientCode: TMC.Client.ClientCode.WordDLatch
+    logicCode: TMC.Server.LogicCode.WordDLatch
+    placingRules:
+        offsetDimensions: (2, 8)
+        defaultOffset: (0, 0)
+        gridPlacingDimensions: (2, 8)
+        
+#######################
+# Word D Latch 2 Byte #
+#######################
+WordDLatch2Byte:
+    column: "Memory"
+    category: "Basic"
+    prefab: dynamic
+    clientCode: TMC.Client.ClientCode.WordDLatch
+    logicCode: TMC.Server.LogicCode.WordDLatch
+    placingRules:
+        offsetDimensions: (2, 16)
+        defaultOffset: (0, 0)
+        gridPlacingDimensions: (2, 16)
+        
+#######################
+# Word D Latch 4 Byte #
+#######################
+WordDLatch4Byte:
+    column: "Memory"
+    category: "Basic"
+    prefab: dynamic
+    clientCode: TMC.Client.ClientCode.WordDLatch
+    logicCode: TMC.Server.LogicCode.WordDLatch
+    placingRules:
+        offsetDimensions: (2, 32)
+        defaultOffset: (0, 0)
+        gridPlacingDimensions: (2, 32)
+
+#######################
+# Word D Latch 8 Byte #
+#######################
+WordDLatch8Byte:
+    column: "Memory"
+    category: "Basic"
+    prefab: dynamic
+    clientCode: TMC.Client.ClientCode.WordDLatch
+    logicCode: TMC.Server.LogicCode.WordDLatch
+    placingRules:
+        offsetDimensions: (2, 64)
+        defaultOffset: (0, 0)
+        gridPlacingDimensions: (2, 64)
+        
+        
+#####################
+# Word Relay 1 Byte #
+#####################
+WordRelay1Byte:
+    column: "Memory"
+    category: "Basic"
+    prefab: dynamic
+    clientCode: TMC.Client.ClientCode.WordRelay
+    logicCode: TMC.Server.LogicCode.WordRelay
+    placingRules:
+        offsetDimensions: (2, 8)
+        defaultOffset: (0, 0)
+        gridPlacingDimensions: (2, 8)
+
+#####################
+# Word Relay 2 Byte #
+#####################
+WordRelay2Byte:
+    column: "Memory"
+    category: "Basic"
+    prefab: dynamic
+    clientCode: TMC.Client.ClientCode.WordRelay
+    logicCode: TMC.Server.LogicCode.WordRelay
+    placingRules:
+        offsetDimensions: (2, 16)
+        defaultOffset: (0, 0)
+        gridPlacingDimensions: (2, 16)
+        
+#####################
+# Word Relay 4 Byte #
+#####################
+WordRelay4Byte:
+    column: "Memory"
+    category: "Basic"
+    prefab: dynamic
+    clientCode: TMC.Client.ClientCode.WordRelay
+    logicCode: TMC.Server.LogicCode.WordRelay
+    placingRules:
+        offsetDimensions: (2, 32)
+        defaultOffset: (0, 0)
+        gridPlacingDimensions: (2, 32)
+        
+#####################
+# Word Relay 8 Byte #
+#####################
+WordRelay8Byte:
+    column: "Memory"
+    category: "Basic"
+    prefab: dynamic
+    clientCode: TMC.Client.ClientCode.WordRelay
+    logicCode: TMC.Server.LogicCode.WordRelay
+    placingRules:
+        offsetDimensions: (2, 64)
+        defaultOffset: (0, 0)
+        gridPlacingDimensions: (2, 64)
