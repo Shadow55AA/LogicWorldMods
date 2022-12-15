@@ -1,5 +1,0 @@
-0.0.4 Changes
-
-Updated to work on Logic World 0.91 Preview 608
-
-Now requires a DLL loading mod such as cheeseloader

@@ -1,0 +1,5 @@
+﻿ComponentColumn.Memory      : "Memory"
+ComponentCategory.Modules   : "Modules"
+HexasMemory.Memory8bit              : "RAM"
+HexasMemory.HexROM8bit              : "Hex ROM"
+HexasMemory.AsmROM8bit              : "Assembly ROM"

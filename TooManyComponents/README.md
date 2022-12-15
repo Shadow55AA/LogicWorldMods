@@ -1,6 +1,6 @@
 # TMC
 
-Too Many Components is a logic world mod that adds word sized versions of the most commonly used components.
+Too Many Components Version 1.0.0 for LogicWorld 0.91 Preview 608. A logic world mod that adds word sized versions of the most commonly used components.
 
 ## Word D Latches and Word Relays
 
