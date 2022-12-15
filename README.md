@@ -1,7 +1,8 @@
 # Logic World Mods
 
-Hexa's Memory Mod
-Too Many Components
+Hexa's Memory Mod<br />
+Too Many Components<br />
+Not Enough Pixels
 
 ## Hexa's Memory Mod
  
@@ -24,7 +25,7 @@ A read only memory component with built in assembler. Instructions with correspo
 
 D Latches and Relays for 1 byte, 2 byte, 4 byte, and 8 byte data.
 
-## Display
+## Not Enough Pixels
 
 ### PixelDisplay
 
