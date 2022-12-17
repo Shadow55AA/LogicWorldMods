@@ -154,7 +154,7 @@ namespace NotEnoughPixels.Client.ClientCode
 
     public class PixelDisplayVariantInfo : PrefabVariantInfo
     {
-        public override string ComponentTextID => "HMM.PixelDisplay";
+        public override string ComponentTextID => "NotEnoughPixels.PixelDisplay";
 
         public override PrefabVariantIdentifier GetDefaultComponentVariant()
         {
