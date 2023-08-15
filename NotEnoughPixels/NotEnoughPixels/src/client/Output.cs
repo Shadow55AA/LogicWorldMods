@@ -67,11 +67,11 @@ namespace NotEnoughPixels.Client.ClientCode
             {
                 setupInputBlock();
                 // Panel
-                SetBlockScale(0, new Vector3(SizeX, 0.333333343f, SizeZ));
+                SetBlockScale(0, new Vector3(SizeX, 0.333333333f, SizeZ));
                 previousSizeX = SizeX;
                 previousSizeZ = SizeZ;
                 // Screen
-                SetDecorationPosition(0, new Vector3((SizeX/2f-0.5f)*0.3f, 0.3334f*0.3f, (SizeZ/2f-0.5f)*0.3f));
+                SetDecorationPosition(0, new Vector3((SizeX/2f-0.5f)*0.3f, 0.34f*0.3f, (SizeZ/2f-0.5f)*0.3f));
                 SetDecorationScale(0, new Vector3(SizeX * 0.3f, SizeZ*0.3f, 1));
                 screenwidth = SizeX * 16;
                 screenheight = SizeZ * 16;
