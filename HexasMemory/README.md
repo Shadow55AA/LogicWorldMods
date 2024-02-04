@@ -1,6 +1,10 @@
 # Hexas Memory
 
+<<<<<<< HEAD
 Hexa's Memory Version 1.0.1 for LogicWorld 0.91.2.
+=======
+Hexa's Memory Version 1.0.0 for LogicWorld 0.91.2.
+>>>>>>> 11acab7a3db680aacbcd44a9b548e2e9a115a5db
 
 ## Memory8bit
 
