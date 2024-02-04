@@ -9,7 +9,7 @@ namespace HexasMemory.Server.LogicCode
     {
         public interface IData
         {
-            byte[] mem { get; set; }
+            byte[] Mem { get; set; }
         }
 
         protected override void DoLogicUpdate()
@@ -19,7 +19,7 @@ namespace HexasMemory.Server.LogicCode
             {
                 address += Inputs[i].On ? 1 << i : 0;
             }
-            byte tdata = Data.mem[address];
+            byte tdata = Data.Mem[address];
             if (Inputs[24].On)
             {
                 tdata = 0;
@@ -27,7 +27,7 @@ namespace HexasMemory.Server.LogicCode
                 {
                     tdata += Inputs[16 + i].On ? (byte)(1 << i) : (byte)0;
                 }
-                Data.mem[address] = tdata;
+                Data.Mem[address] = tdata;
             }
             for (int i = 0; i < 8; i++)
             {
@@ -41,7 +41,7 @@ namespace HexasMemory.Server.LogicCode
 
         protected override void SetDataDefaultValues()
         {
-            Data.mem = new byte[65536];
+            Data.Mem = new byte[65536];
         }
     }
 

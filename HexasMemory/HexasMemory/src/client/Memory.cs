@@ -78,9 +78,9 @@ namespace HexasMemory.Client.ClientCode
             base.Data.SizeZ = 8;
         }
 
-        protected override IList<IDecoration> GenerateDecorations()
+        protected override IDecoration[] GenerateDecorations(Transform parentToCreateDecorationsUnder)
         {
-            GameObject gameObject = Object.Instantiate(Prefabs.ComponentDecorations.LabelText);
+            GameObject gameObject = Object.Instantiate(Prefabs.ComponentDecorations.LabelText, parentToCreateDecorationsUnder);
             TextManager = gameObject.GetComponent<LabelTextManager>();
             return new Decoration[1]
             {
@@ -239,10 +239,10 @@ namespace HexasMemory.Client.ClientCode
             base.Data.Zdata = new byte[65536];
         }
 
-        protected override IList<IDecoration> GenerateDecorations()
+        protected override IDecoration[] GenerateDecorations(Transform parentToCreateDecorationsUnder)
         {
             // Text
-            GameObject gameObject = Object.Instantiate(Prefabs.ComponentDecorations.LabelText);
+            GameObject gameObject = Object.Instantiate(Prefabs.ComponentDecorations.LabelText, parentToCreateDecorationsUnder);
             TextManager = gameObject.GetComponent<LabelTextManager>();
             TextManagerRT = TextManager.GetRectTransform();
             TextManagerRT.sizeDelta = new Vector2(8, 7) * 0.3f;
@@ -250,16 +250,17 @@ namespace HexasMemory.Client.ClientCode
             // Button
             Vector3 rawBlockScale = GetRawBlockScale();
             UpLocalPosition = new Vector3(rawBlockScale.x / 2f - 0.15f, rawBlockScale.y, rawBlockScale.z / 16f - 0.15f);
-            GameObject gameObject2 = Object.Instantiate(Prefabs.ComponentDecorations.Button);
+            GameObject gameObject2 = Object.Instantiate(Prefabs.ComponentDecorations.ButtonVisuals, parentToCreateDecorationsUnder);
             VisualButton = gameObject2.GetComponentInChildren<MeshRenderer>();
             VisualButton.transform.localScale = new Vector3(rawBlockScale.x - 0.09f, 0.06f, rawBlockScale.z / 8 - 0.09f);
             OutlineWhenInteractableLookedAt = new MeshFilter[1] { VisualButton.GetComponent<MeshFilter>() };
 
-            GameObject gameObject3 = new GameObject("button colliders");
-            gameObject3.AddComponent<ButtonInteractable>().Button = this;
-            flatCollider = gameObject3.AddComponent<BoxCollider>();
+            GameObject gameObject3 = Object.Instantiate(Prefabs.ComponentDecorations.ButtonColliders, parentToCreateDecorationsUnder);
+            gameObject3.GetComponent<ButtonInteractable>().Button = this;
+			BoxCollider[] colliders = gameObject3.GetComponents<BoxCollider>();
+            flatCollider = colliders[0];
             flatCollider.size = new Vector3(rawBlockScale.x, 0.02f, rawBlockScale.z / 8);
-            buttonShapeCollider = gameObject3.AddComponent<BoxCollider>();
+            buttonShapeCollider = colliders[1];
             buttonShapeCollider.size = VisualButton.transform.localScale;
             buttonShapeCollider.center = new Vector3(0f, buttonShapeCollider.size.y / 2f, 0f);
 
