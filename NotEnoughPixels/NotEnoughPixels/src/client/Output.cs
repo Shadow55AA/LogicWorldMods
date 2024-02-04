@@ -57,7 +57,7 @@ namespace NotEnoughPixels.Client.ClientCode
         {
             Data.SizeX = 3;
             Data.SizeZ = 2;
-            Data.memdata = null;
+            Data.Memdata = null;
         }
 
         protected override void DataUpdate()
@@ -99,9 +99,9 @@ namespace NotEnoughPixels.Client.ClientCode
 
         protected override void FrameUpdate()
         {
-            if(Data.memdata != null)
+            if(Data.Memdata != null)
             {
-                MemoryStream stream = new MemoryStream(Data.memdata);
+                MemoryStream stream = new MemoryStream(Data.Memdata);
                 stream.Position = 0;
                 DeflateStream decompressor = new DeflateStream(stream, CompressionMode.Decompress);
                 int length = decompressor.Read(mem, 0, 196608);
@@ -124,7 +124,7 @@ namespace NotEnoughPixels.Client.ClientCode
             return PlacingRules.FlippablePanelOfSize(SizeX, SizeZ);
         }
         
-        protected override IList<IDecoration> GenerateDecorations()
+        protected override IDecoration[] GenerateDecorations(Transform parentToCreateDecorationsUnder)
         {
             if (screen == null)
             {
@@ -136,6 +136,7 @@ namespace NotEnoughPixels.Client.ClientCode
             Material material = new Material(Shader.Find("Unlit/Texture"));
             material.mainTexture = screen;
             GameObject gameObject = GameObject.CreatePrimitive(PrimitiveType.Quad);
+			gameObject.transform.SetParent(parentToCreateDecorationsUnder);
             gameObject.transform.localScale = new Vector3(0.3f, 0.3f, 0.3f);
             gameObject.GetComponent<Renderer>().material = material;
             return new Decoration[1]

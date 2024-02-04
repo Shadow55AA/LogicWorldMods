@@ -4,6 +4,6 @@
     {
         int SizeX { get; set; }
         int SizeZ { get; set; }
-        byte[] memdata { get; set; }
+        byte[] Memdata { get; set; }
     }
 }

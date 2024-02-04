@@ -106,9 +106,9 @@ namespace NotEnoughPixels.Server.LogicCode
                 screenwidth = Data.SizeX * 16;
                 screenheight = Data.SizeZ * 16;
             }
-            if(loadfromsave && Data.memdata!=null)
+            if(loadfromsave && Data.Memdata!=null)
             {
-                MemoryStream stream = new MemoryStream(Data.memdata);
+                MemoryStream stream = new MemoryStream(Data.Memdata);
                 stream.Position = 0;
                 DeflateStream decompressor = new DeflateStream(stream, CompressionMode.Decompress);
                 int length = decompressor.Read(mem, 0, 196608);
@@ -120,7 +120,7 @@ namespace NotEnoughPixels.Server.LogicCode
         {
             Data.SizeX = 3;
             Data.SizeZ = 2;
-            Data.memdata = null;
+            Data.Memdata = null;
         }
 
         private void WriteScreenToData()
@@ -133,7 +133,7 @@ namespace NotEnoughPixels.Server.LogicCode
             memstream.Position = 0;
             byte[] bytes = new byte[length];
             memstream.Read(bytes, 0, length);
-            Data.memdata = bytes;
+            Data.Memdata = bytes;
         }
     }
 }

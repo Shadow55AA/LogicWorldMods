@@ -1,3 +1,3 @@
-1.0.1 Changes
+1.0.2 Changes
 
-Modified Screen placement to eliminate Z-fighting
+Updated for 0.91.2
